@@ -58,6 +58,12 @@ jobs:
       # 安装依赖
       - name: Install dependencies
         run: pnpm install
+      - name: Cat Env
+        run: |
+          cat << EOF > .env
+          UPSTASH_REDIS_REST_URL=${{ secrets.UPSTASH_REDIS_REST_URL }}
+          UPSTASH_REDIS_REST_TOKEN=${{ secrets.UPSTASH_REDIS_REST_TOKEN }}
+          EOF
       # 编译
       - name: Build with Next.js
         run: pnpm run build
