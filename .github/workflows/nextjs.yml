@@ -57,15 +57,15 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
       # 安装依赖
       - name: Install dependencies
-        run: npm i
+        run: pnpm install
       # 编译
       - name: Build with Next.js
-        run: npm run build
+        run: pnpm run build
       # 上传工作 Build 完的静态文件会存放在 out 文件夹，在 next.config.js 中配置 output: 'export'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./out
+          path: ./.next
 
   # Deployment job 部署工作
   deploy:
