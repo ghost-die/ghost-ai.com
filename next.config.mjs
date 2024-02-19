@@ -8,5 +8,5 @@ const nextConfig = {
 	},
 	output: 'export',
 };
-
-export default withContentlayer(nextConfig);
+module.exports = nextConfig
+// export default withContentlayer(nextConfig);
