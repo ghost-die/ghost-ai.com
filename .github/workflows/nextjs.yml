@@ -68,7 +68,7 @@ jobs:
           EOF
       # 编译
       - name: Build with Next.js
-        run: ls -al && pnpm run build
+        run: ls -al && cat .env && pnpm run build
       # 上传工作 Build 完的静态文件会存放在 out 文件夹，在 next.config.js 中配置 output: 'export'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
