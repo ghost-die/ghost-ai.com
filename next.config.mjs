@@ -6,6 +6,6 @@ const nextConfig = {
 	experimental: {
 		mdxRs: true,
 	},
+	output: 'export', // 添加此行配置来替代 next export 命令
 };
-// module.exports = nextConfig
 export default withContentlayer(nextConfig);
