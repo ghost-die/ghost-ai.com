@@ -6,7 +6,6 @@ const nextConfig = {
 	experimental: {
 		mdxRs: true,
 	},
-	output: 'export',
 };
 // module.exports = nextConfig
 export default withContentlayer(nextConfig);
