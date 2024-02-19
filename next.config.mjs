@@ -6,7 +6,7 @@ const nextConfig = {
 	experimental: {
 		mdxRs: true,
 	},
-	output: 'export' // 这里是添加的配置代码
+	output: 'export',
 };
 
 export default withContentlayer(nextConfig);
