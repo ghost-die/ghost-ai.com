@@ -3,27 +3,28 @@ import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "ghost-ai.com",
+    template: "%s | ghost-ai.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "一人，一剑，守一座孤城，等你归来",
   openGraph: {
-    title: "chronark.com",
+    title: "ghost-ai.com",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "一人，一剑，守一座孤城，等你归来",
+    url: "https://ghost-ai.com",
+    siteName: "ghost-ai.com",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://ghost-ai.com/og.png",
         width: 1920,
         height: 1080,
       },
     ],
-    locale: "en-US",
+    locale: "zh-CN",
     type: "website",
   },
   robots: {
@@ -61,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+    <html lang="zh" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
         <Analytics />
       </head>
