@@ -33,30 +33,27 @@ export default function Home() {
       <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         听雪阁
       </h1>
-
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
-    
+      
       <h2 className="text-sm text-zinc-500">
-      一人，一剑，守一座孤城，等你归来
-      </h2>
-      <h2 className="text-sm text-zinc-500">
-          开源协议：MIT license 开源地址：
-          <Link
-            target="_blank"
-            href="https://github.com/chronark/chronark.com"
-            className="underline duration-500 hover:text-zinc-300"
-          >
-            chronark.com
-          </Link>  
-          ICP 备案：
-          <Link 
+      
+      <Link 
             target="_blank"
             href="https://beian.miit.gov.cn"
             className="underline duration-500 hover:text-zinc-300"
           >
             皖ICP备17004047号
+          </Link>{" "}
+          MIT{" "}
+          <Link
+            target="_blank"
+            href="https://github.com/chronark/chronark.com"
+            className="underline duration-500 hover:text-zinc-300"
+          >
+          chronark.com{" "}
           </Link>
+          
         </h2>
       </div>
 
