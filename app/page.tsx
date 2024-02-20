@@ -48,7 +48,7 @@ export default function Home() {
             className="underline duration-500 hover:text-zinc-300"
           >
             chronark.com
-          </Link> 
+          </Link>  
           ICP 备案：
           <Link 
             target="_blank"
